@@ -7,7 +7,7 @@ Here you find all information required for you to work during the Hackathon.
 
 # Link to the presentation
 
-[Presentation about microservices](https://docs.google.com/presentation/d/1alWCqeNK2KT-bjidlGZ_tvoN5hYQT0VBhbMcrOzkGyU/edit?usp=sharing)
+[Presentation about microservices](https://docs.google.com/presentation/d/1jwgrLaHw3B9nXyVEW0QxFtyTZy2FHjotooqWtXwaI5k/)
 
 # Ok what should I do now? 
 
@@ -44,15 +44,15 @@ We give you Spring profiles! Just add a system property:
 
 ## Architecture draft
 
-[Click to see the draft](https://docs.google.com/document/d/1yRV5DNJAhBH73bJo-s5L8wwoeJG4Ke6H45dg8_rRT84/edit?usp=sharing)
+[Click to see the draft](
 
 ## Architecture plan
 
-[Click to see the plan](https://drive.google.com/file/d/0B4mHLrLla3S8VHd3QXZrZ25yb1U/view?usp=sharing)
+[Click to see the plan](https://docs.google.com/document/d/1dXub2V0U5cNk9-lLUgfeRRQ5yzGMJ8TQpS8iRRWWy5A/)
 
 ## Formats of incoming messages (only suggestion! decide yourself)
 
-### FraudDetectionService
+### fraud-detection-service
 
 PUT /api/loanApplication/{loanApplicationId}
 
@@ -66,7 +66,7 @@ PUT /api/loanApplication/{loanApplicationId}
 }
 ```
 
-###LoanApplicationDecisionMaker
+### loan-application-decision-maker
 
 PUT /api/loanApplication/{loanApplicationId}
 
@@ -88,7 +88,7 @@ GET /api/loanApplication/{loanApplicationId}
 }
 ```
 
-###ClientService
+### client-service
 
 POST /api/client
 
@@ -100,7 +100,7 @@ POST /api/client
     "loanId" : "text" (This is actually the loan application identifier.)
 }
 ```
-###LoanApplicationService
+### loan-application-aervice
 
 POST /api/loanApplication
 
@@ -111,7 +111,7 @@ POST /api/loanApplication
 }
 ```
 
-###ReportingService
+### reporting-service
 
 POST /api/client
 
@@ -136,7 +136,7 @@ POST /api/reporting
 }
 ```
 
-###MarketingOfferGenerator
+### marketing-offer-generator
 
 PUT /api/marketing/{loanApplicationId}
 
@@ -156,4 +156,9 @@ GET /api/marketing/{firstName}_{lastName}
 {
     "marketingOffer" : "text"
 }
+```
+
+### ui
+
+```
 ```
